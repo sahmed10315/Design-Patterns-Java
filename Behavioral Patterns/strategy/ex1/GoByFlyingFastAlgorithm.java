@@ -1,0 +1,10 @@
+package strategy.ex1;
+
+public class GoByFlyingFastAlgorithm implements GoAlgorithm {
+
+	@Override
+	public void go() {
+		System.out.println("Now I'm flying fast.");
+	}
+
+}
