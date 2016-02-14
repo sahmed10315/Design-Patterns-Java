@@ -3,6 +3,7 @@ package strategy.ex1;
  * Strategy patterns lets us select algorithms at runtime.
  * Reference : Effective Java, Bloch, Item 21.
  * Reference : Design pattern for dummies.
+ * Example in JDK : java.util.Comparator#compare(), executed by among others Collections#sort().
  */
 public class TestStrategy {
 
