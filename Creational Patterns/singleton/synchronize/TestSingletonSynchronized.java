@@ -1,6 +1,6 @@
 package singleton.synchronize;
 
-// This uses lazy initialization approach
+/* This program uses lazy initialization approach for Singleton Design pattern. */
 public class TestSingletonSynchronized implements Runnable {
 	Thread thread;
 

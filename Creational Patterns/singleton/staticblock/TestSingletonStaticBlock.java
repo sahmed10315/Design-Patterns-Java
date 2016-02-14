@@ -1,6 +1,6 @@
 package singleton.staticblock;
 
-// This uses eager initialization approach
+/* This program uses eager initialization static block approach for Singleton Design pattern. */
 public class TestSingletonStaticBlock implements Runnable {
 	Thread thread;
 

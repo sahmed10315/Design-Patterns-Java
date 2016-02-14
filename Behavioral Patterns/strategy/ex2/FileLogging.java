@@ -3,7 +3,9 @@ package strategy.ex2;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
+/**
+ * Concrete strategy class representing a particular algorithm.
+ */
 public class FileLogging implements Logging {
 
 	private final File toWrite;

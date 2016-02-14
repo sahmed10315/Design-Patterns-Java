@@ -1,11 +1,11 @@
 package singleton.eagerinitialization;
 
-// This uses eager initialization approach
+/* This program uses eager initialization approach for Singleton Design pattern. */
 public class TestSingletonEager implements Runnable {
 	Thread thread;
 
 	public static void main(String args[]) {
-		 new TestSingletonEager();
+		new TestSingletonEager();
 	}
 
 	public TestSingletonEager() {

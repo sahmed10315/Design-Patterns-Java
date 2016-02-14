@@ -1,11 +1,12 @@
 package singleton.doublecheckedlocking;
 
-// This uses lazy initialization approach
+/* Thread safe Database Singleton class using double check locking idiom. 
+ * Reference: Effective Java, Item 71 */
 public class TestSingletonDCL implements Runnable {
 	Thread thread;
 
 	public static void main(String args[]) {
-		 new TestSingletonDCL();
+		new TestSingletonDCL();
 	}
 
 	public TestSingletonDCL() {

@@ -1,6 +1,8 @@
 package singleton.staticblock;
 
-/* DatabasestaticBlock object is initialized in a static block, which allows some preprocessing or error checking, while creating the instance.. */
+/* DatabasestaticBlock object is initialized in a static block, which allows some 
+ * preprocessing or error checking to be done, while creating the instance.. 
+ * */
 public class DatabaseStaticBlock {
 	private static DatabaseStaticBlock singleObject;
 	private String name;

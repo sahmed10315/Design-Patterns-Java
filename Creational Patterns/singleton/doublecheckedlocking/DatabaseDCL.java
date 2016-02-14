@@ -1,6 +1,7 @@
 package singleton.doublecheckedlocking;
 
-/* Thread safe Database Singleton class using double check locking idiom. */
+/* Double check locking idiom is a technique of lazy initialization, where the object is checked twice for being null, 
+ * first without the lock, and if found not initialized, its tested with the synchronized lock. */
 public class DatabaseDCL {
 	private static volatile DatabaseDCL singleObject;
 	private String name;
@@ -13,7 +14,7 @@ public class DatabaseDCL {
 		if (singleObject == null) {
 			synchronized (DatabaseDCL.class) {
 				if (singleObject == null) {
-					singleObject = new DatabaseDCL(n); 
+					singleObject = new DatabaseDCL(n);
 				}
 			}
 		}

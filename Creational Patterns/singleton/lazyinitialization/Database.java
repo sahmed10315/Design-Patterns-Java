@@ -1,7 +1,6 @@
 package singleton.lazyinitialization;
 
-/* Database class must be instantiated only once , it is to ensure that 
-   whole application makes use of the same Database instance. 
+/* Database class must be instantiated only once.
    This is lazy initialization approach of using singleton pattern, and is thread unsafe. */
 public class Database {
 	private static Database singleObject; // by default, this field is null

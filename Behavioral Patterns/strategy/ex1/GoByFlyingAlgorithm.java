@@ -1,5 +1,8 @@
 package strategy.ex1;
 
+/**
+ * Concrete strategy class representing a particular algorithm.
+ */
 public class GoByFlyingAlgorithm implements GoAlgorithm {
 
 	@Override

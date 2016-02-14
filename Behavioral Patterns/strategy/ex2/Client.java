@@ -1,5 +1,9 @@
 package strategy.ex2;
 
+/**
+ * The Client class encapsulates the strategy object, by encapsulating the
+ * strategy interface the algorithm becomes interchangable within the family.
+ */
 public class Client {
 
 	private final Logging logging;

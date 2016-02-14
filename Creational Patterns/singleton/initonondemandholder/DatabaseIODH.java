@@ -1,7 +1,8 @@
 package singleton.initonondemandholder;
 
-/*  Safe, highly concurrent lazy initialization with good performance database 
- *  Singleton class using Initialization-on-demand holder idiom. */
+/*  Safe, highly concurrent lazy initialization with good performance 
+ *  Singleton class using Initialization-on-demand holder idiom. 
+ *  Reference: Effective Java, Item 71 */
 public class DatabaseIODH {
 
 	private DatabaseIODH(String n) {
