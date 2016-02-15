@@ -1,64 +1,44 @@
 package adapter.classadapter;
 
 import java.awt.*;
-import javax.swing.*; 
+import javax.swing.*;
 import java.awt.event.*;
 
-public class Checkboxes extends JFrame implements ItemListener
-{
-    /**
-	 * 
-	 */
+public class Checkboxes extends JFrame implements ItemListener {
+	
 	private static final long serialVersionUID = 1L;
 	CheckboxAdapter checks[];
-    JTextField text;
+	JTextField text;
 
-    public Checkboxes() 
-    {
-        Container contentPane = getContentPane();
-        contentPane.setLayout(new FlowLayout());
+	public Checkboxes() {
+		Container contentPane = getContentPane();
+		contentPane.setLayout(new FlowLayout());
 
-        checks = new CheckboxAdapter[4];
+		checks = new CheckboxAdapter[4];
 
-        for(int loopIndex = 0; loopIndex 
-          <= checks.length - 1; loopIndex++){
-            checks[loopIndex] = new CheckboxAdapter("Check " + 
-              loopIndex);
-            checks[loopIndex].addItemListener(this);
-            contentPane.add(checks[loopIndex]);
-        }
+		for (int loopIndex = 0; loopIndex <= checks.length - 1; loopIndex++) {
+			checks[loopIndex] = new CheckboxAdapter("Check " + loopIndex);
+			checks[loopIndex].addItemListener(this);
+			contentPane.add(checks[loopIndex]);
+		}
 
-        text = new JTextField(30);
+		text = new JTextField(30);
 
-        contentPane.add(text); 
-    }
+		contentPane.add(text);
+	}
+	/**
+	 * We can handle AWT adapted check boxes as we would standard 
+	 * Swing check boxes when it comes to the isSelected method
+	 */
+	public void itemStateChanged(ItemEvent e) {
+		String outString = new String("Selected: ");
 
-    public void itemStateChanged(ItemEvent e)
-    {
-        String outString = new String("Selected: ");
-
-        for(int loopIndex = 0; loopIndex 
-          <= checks.length - 1; loopIndex++){
-            if(checks[loopIndex].isSelected()) {
-                outString += " checkbox " + loopIndex;
-            }
-        }
-        text.setText(outString);
-    }
-
-    public static void main(String args[]) 
-    {
-        final Checkboxes f = new Checkboxes();
-
-        f.setBounds(100, 100, 400, 300);
-        f.setVisible(true);
-        f.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-
-        f.addWindowListener(new WindowAdapter() {
-            public void windowClosing(WindowEvent e) {
-                System.exit(0);
-            }
-        });
-    }
+		for (int loopIndex = 0; loopIndex <= checks.length - 1; loopIndex++) {
+			if (checks[loopIndex].isSelected()) {
+				outString += " checkbox " + loopIndex;
+			}
+		}
+		text.setText(outString);
+	}
 
 }
