@@ -9,6 +9,8 @@ import java.io.IOException;
  * Strategy patterns lets us select algorithms at runtime.
  * Reference : Effective Java, Bloch, Item 21.
  * Example in JDK : java.util.Comparator#compare(), executed by among others Collections#sort().
+ * In jdk they are recognizeable by behavioral methods in an abstract/interface type which invokes a method 
+ * in an implementation of a different abstract/interface type which has been passed-in as method argument into the strategy implementation)
  */
 public class TestStrategy {
 

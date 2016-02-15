@@ -2,7 +2,8 @@ package adapter.objectadapter.ex1;
 
 /* Adapter convert the interface of a class into another interface clients expect.
  * (Class adapter pattern is not possible in java because of multiple inheritance not supported). 
- * Reference : Effective Java, Page 8 , 22, 95, 107 
+ * 
+ * Reference : Effective Java, Page 8, 22, 95, 107 
  * In JDK they are recognizable by creational methods taking an instance of different abstract/interface 
  * 		   type and returning an implementation of own/another abstract/interface type which decorates/overrides the given instance)
  * 

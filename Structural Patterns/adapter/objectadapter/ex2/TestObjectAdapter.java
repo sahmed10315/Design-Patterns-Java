@@ -1,8 +1,9 @@
 package adapter.objectadapter.ex2;
 
-/* Adapter convert the interface of a class into another interface clients expect 
- * Reference : Effective Java, Page 8 , 22, 95, 107 
- * In JDK they are recognizeable by creational methods taking an instance of different abstract/interface 
+/* Adapter convert the interface of a class into another interface clients expect
+ *  
+ * Reference : Effective Java, Page 8, 22, 95, 107 
+ * In JDK they are recognizable by creational methods taking an instance of different abstract/interface 
  * 		   type and returning an implementation of own/another abstract/interface type which decorates/overrides the given instance)
  * 
  * JDK Examples:   java.util.Arrays#asList()
