@@ -1,7 +1,7 @@
 package observer.ex1;
 
 import java.util.*;
-
+/* Subject, maintains a list of its dependents, called observers, and notifies them automatically of any state change*/
 public class Database implements Subject {
 	private Vector<Observer> observers;
 	private String operation;
