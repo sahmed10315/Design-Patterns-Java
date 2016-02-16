@@ -1,7 +1,9 @@
 package observer.ex2;
 
-// Circle class "informs" (i.e., "notifies") Canvas and ShapeArchiver whenever it gets "changed"
-// by calling the update method of these two classes  
+/* Circle class does not know about the concrete observer classes and can be changed independently.
+ * Circle class "informs" (i.e., "notifies") Canvas and ShapeArchiver whenever it gets "changed"
+ * by calling the update method of these two classes
+ */  
 public class Circle {
 	private Point center;
 
