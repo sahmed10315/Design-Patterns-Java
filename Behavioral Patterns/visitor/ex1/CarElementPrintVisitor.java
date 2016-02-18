@@ -1,6 +1,6 @@
 package visitor.ex1;
 
-/* Visitor class implements all the appropriate specializations of the virtual functions in the visitor interface*/
+/* Visitor class implements all the appropriate specializations of the methods in the visitor interface*/
 public class CarElementPrintVisitor implements ICarElementVisitor {
 	public void visit(Wheel wheel) {
 		System.out.println("Visiting " + wheel.getName() + " wheel");
