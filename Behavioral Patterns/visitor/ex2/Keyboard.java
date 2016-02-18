@@ -1,5 +1,6 @@
 package visitor.ex2;
 
+/* An element of ComputerPart, which dispatches its execution to a particular visitor class instance */
 public class Keyboard implements ComputerPart {
 
 	@Override

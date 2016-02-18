@@ -1,6 +1,7 @@
 package visitor.ex2;
 
-public class Monitor implements ComputerPart { 
+/* An element of ComputerPart, which dispatches its execution to a particular visitor class instance */
+public class Monitor implements ComputerPart {
 	@Override
 	public void accept(ComputerPartVisitor computerPartVisitor) {
 		computerPartVisitor.visit(this);

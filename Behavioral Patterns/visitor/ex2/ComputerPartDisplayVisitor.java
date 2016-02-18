@@ -1,5 +1,6 @@
 package visitor.ex2;
 
+/* Visitor class implements all the appropriate specializations of the virtual functions in the visitor interface*/
 public class ComputerPartDisplayVisitor implements ComputerPartVisitor {
 
 	@Override
