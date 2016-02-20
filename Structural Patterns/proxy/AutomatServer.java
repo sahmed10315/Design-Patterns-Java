@@ -5,6 +5,7 @@ import java.net.*;
 
 import state.*;
 
+/* A stand alone server for automat, which is running separately on the net */
 public class AutomatServer implements Runnable, AutomatInterface {
 	State waitingState;
 	State gotApplicationState;
@@ -18,7 +19,7 @@ public class AutomatServer implements Runnable, AutomatInterface {
 	Socket communicationSocket;
 
 	public static void main(String args[]) {
-		AutomatServer d = new AutomatServer();
+		 new AutomatServer();
 	}
 
 	public AutomatServer() {

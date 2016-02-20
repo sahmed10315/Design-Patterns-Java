@@ -3,6 +3,7 @@ package proxy;
 import java.io.*;
 import java.net.*;
 
+/* Proxy object which client uses to interact with the server*/
 public class AutomatProxy implements Runnable {
 	private Thread thread;
 	Socket socket;
