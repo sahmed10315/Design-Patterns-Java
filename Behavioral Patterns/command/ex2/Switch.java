@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * commands possible
  */
 public class Switch {
-	private List<Command> history = new ArrayList<Command>(); // Log for the step of commands
+	private List<Command> history = new ArrayList<Command>(); // Log for history of commands
 
 	public void storeAndExecute(Command cmd) {
 		this.history.add(cmd); // optional
