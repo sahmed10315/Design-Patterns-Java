@@ -1,6 +1,10 @@
 package command.ex1;
 
-/* Invoker class */
+/**
+ * The invoker class is not necessary if we only have an execute method, but
+ * primary reason for invokers is also to keep track of multiple commands in a
+ * log or queue, which makes undoing a sequence of commands possible
+ */
 public class Invoker {
 	Command commands[] = new Command[5];
 	int position;

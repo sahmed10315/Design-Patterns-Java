@@ -5,6 +5,9 @@ package command.ex1;
  * particular target, into easily handled objects. When we want to execute a command, we no longer have to take all the
  * separate steps, but just use the specific prebuilt, preconfigured command object. 
  * 
+ * In short command pattern is about encapsulating commands in an object, and the resulting object is treated more as a "verb"
+ * than as a "noun".
+ * 
  * In JDK they are recognizable by recognizable by behavioral methods in an abstract/interface type which invokes a 
  * method in an implementation of a different abstract/interface type which has been encapsulated by the command implementation 
  * during its creation
