@@ -1,5 +1,6 @@
 package command.ex1;
 
+/* Receiver class */
 public class AsiaServer implements Receiver {
 	public AsiaServer() {
 	}
