@@ -1,5 +1,6 @@
 package command.ex1;
 
+/* Invoker class */
 public class Invoker {
 	Command commands[] = new Command[5];
 	int position;

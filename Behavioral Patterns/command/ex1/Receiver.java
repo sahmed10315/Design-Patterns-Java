@@ -1,5 +1,6 @@
 package command.ex1;
 
+/* Receiver interface */
 public interface Receiver {
 	public void connect();
 

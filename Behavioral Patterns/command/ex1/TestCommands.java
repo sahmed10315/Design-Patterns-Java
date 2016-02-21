@@ -1,5 +1,14 @@
 package command.ex1;
 
+/* 
+ * Command pattern takes encapsulation to another level, by encapsulating a set of complex actions, targeted at a 
+ * particular target, into easily handled objects. When we want to execute a command, we no longer have to take all the
+ * separate steps, but just use the specific prebuilt, preconfigured command object. 
+ * 
+ * In JDK they are recognizable by recognizable by behavioral methods in an abstract/interface type which invokes a 
+ * method in an implementation of a different abstract/interface type which has been encapsulated by the command implementation 
+ * during its creation
+ */
 public class TestCommands {
 	public static void main(String args[]) {
 		new TestCommands();

@@ -1,14 +1,9 @@
-package command.ex2;
-
-import java.util.ArrayList;
-import java.util.List;
+package command.ex2; 
 
 /** The Invoker class */
-public class Switch {
-   private List<Command> history = new ArrayList<Command>();
+public class Switch { 
 
-   public void storeAndExecute(Command cmd) {
-      this.history.add(cmd); // optional 
+   public void execute(Command cmd) {
       cmd.execute();
    }
 }

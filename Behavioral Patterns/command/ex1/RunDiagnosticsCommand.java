@@ -1,12 +1,17 @@
 package command.ex1;
 
+/** The Command for running diagnostics on server - ConcreteCommand #2 */
 public class RunDiagnosticsCommand implements Command {
-	Receiver receiver;
+	Receiver receiver; // Receiver is the target on which command will be executed.
 
 	public RunDiagnosticsCommand(Receiver r) {
 		receiver = r;
 	}
 
+	/*
+	 * All separate steps for running diagnostic are encapsulated into one
+	 * execute method
+	 */
 	public void execute() {
 		receiver.connect();
 		receiver.diagnostics();
