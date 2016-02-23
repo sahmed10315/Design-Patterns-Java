@@ -18,8 +18,6 @@ public class Mediator {
 			shop.go();
 		} else if (state.equals("shop.purchase")) {
 			purchase.go();
-		} else if (state.equals("purchase.exit")) {
-			exit.go();
 		} else if (state.equals("welcome.exit")) {
 			exit.go();
 		} else if (state.equals("shop.exit")) {
