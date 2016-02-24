@@ -2,6 +2,7 @@ package mediator;
 
 import java.io.*;
 
+/* This object communicates with other object through its Mediator */
 public class Shop {
 	Mediator mediator;
 	String response = "n";
@@ -19,7 +20,7 @@ public class Shop {
 		} catch (IOException e) {
 			System.err.println("Error");
 		}
-
+		// communicates with other object through its Mediator
 		if (response.equals("y")) {
 			mediator.handle("shop.purchase");
 		} else {

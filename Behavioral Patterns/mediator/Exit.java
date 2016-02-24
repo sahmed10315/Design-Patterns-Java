@@ -1,5 +1,6 @@
 package mediator;
 
+/* This object communicates with other object through its Mediator */
 public class Exit {
 	Mediator mediator;
 

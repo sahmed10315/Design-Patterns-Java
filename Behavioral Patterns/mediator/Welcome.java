@@ -2,6 +2,7 @@ package mediator;
 
 import java.io.*;
 
+/* This object communicates with other object through its Mediator */
 public class Welcome {
 	Mediator mediator;
 	String response = "n";

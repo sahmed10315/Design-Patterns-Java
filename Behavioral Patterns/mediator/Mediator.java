@@ -1,5 +1,6 @@
 package mediator;
 
+/* This class encapsulates how a set of objects interact. It is aware of all the Colleagues and their purpose with regards to inter communication*/
 public class Mediator {
 	Welcome welcome;
 	Shop shop;
@@ -13,6 +14,8 @@ public class Mediator {
 		exit = new Exit(this);
 	}
 
+	// Objects no longer communicate directly with each other, but instead
+	// communicate through this mediator method
 	public void handle(String state) {
 		if (state.equals("welcome.shop")) {
 			shop.go();
