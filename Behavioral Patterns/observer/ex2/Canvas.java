@@ -1,8 +1,13 @@
 package observer.ex2;
 
-public class Canvas {
-	public void update(Circle circle) {
+import java.util.Observable;
+import java.util.Observer;
+
+/* Observer class */
+public class Canvas implements Observer {
+	@Override
+	public void update(Observable arg0, Object arg1) {
 		System.out.println("Canvas::update");
-		// update implementation
+		// actual update code removed  
 	}
 }

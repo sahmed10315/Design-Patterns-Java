@@ -1,37 +1,26 @@
 package observer.ex2;
 
-/* Circle class does not know about the concrete observer classes and can be changed independently.
+/* Subject class Circle does not know about the concrete observer classes and can be changed independently.
  * Circle class "informs" (i.e., "notifies") Canvas and ShapeArchiver whenever it gets "changed"
  * by calling the update method of these two classes
- */  
-public class Circle {
+ */
+import java.util.Observable;
+
+public class Circle extends Observable {
 	private Point center;
+	private int radius;
 
 	public void setCenter(Point center) {
 		this.center = center;
-		canvas.update(this);
-		shapeArchiver.update(this);
+		setChanged();
+		notifyObservers();
 	}
 
 	public void setRadius(int radius) {
 		this.radius = radius;
-		canvas.update(this);
-		shapeArchiver.update(this);
+		setChanged();
+		notifyObservers();
 	}
-
-	private ShapeArchiver shapeArchiver;
-
-	public void setShapeArchiver(ShapeArchiver shapeArchiver) {
-		this.shapeArchiver = shapeArchiver;
-	}
-
-	protected Canvas canvas;
-
-	public void setCanvas(Canvas canvas) {
-		this.canvas = canvas;
-	}
-
-	private int radius;
 
 	public Circle(int x, int y, int r) {
 		center = new Point(x, y);

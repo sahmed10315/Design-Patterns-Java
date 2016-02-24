@@ -1,8 +1,13 @@
 package observer.ex2;
 
-public class ShapeArchiver {
-	public void update(Circle circle) {
+import java.util.Observable;
+import java.util.Observer;
+
+/* Observer class */
+public class ShapeArchiver implements Observer {
+	@Override
+	public void update(Observable arg0, Object arg1) {
 		System.out.println("ShapeArchiver::update");
-		// update implementation
+		// actual update code removed
 	}
 }
