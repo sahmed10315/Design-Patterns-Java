@@ -1,6 +1,7 @@
 package decorator.ex1;
 
-public class Disk extends ComponentDecorator { 
+/*The first concrete decorator which a Disk to the core component SimpleComputer */
+public class Disk extends ComponentDecorator {
 
 	public Disk(Computer c) {
 		super(c);

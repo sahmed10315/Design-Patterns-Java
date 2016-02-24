@@ -7,6 +7,8 @@ package builder.ex3;
  * 
  * In JDK they are recognizable by creational methods returning the instance itself
  * 
+ * Effective Java: Item 2
+ * 
  * JDK Examples:   java.lang.StringBuilder#append() (unsynchronized)
  * 				   java.lang.StringBuffer#append() (synchronized)
  * 				   java.nio.ByteBuffer#put() (also on CharBuffer, ShortBuffer, IntBuffer, LongBuffer, FloatBuffer and DoubleBuffer)

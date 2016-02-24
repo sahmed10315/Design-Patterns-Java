@@ -1,9 +1,10 @@
 package decorator.ex1;
 
-public class SimpleComputer implements Computer{
+/* Core component, which should always be present */
+public class SimpleComputer implements Computer {
 
 	@Override
-	public String description() { 
-		    return "computer"; 
-	} 
+	public String description() {
+		return "computer";
+	}
 }

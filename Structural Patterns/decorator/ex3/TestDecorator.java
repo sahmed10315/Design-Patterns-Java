@@ -1,4 +1,4 @@
-package decorator.ex2;
+package decorator.ex3;
 
 /* Decorator pattern attaches additional responsibilities to an object dynamically. They are a flexible alternative to subclassing for extending functionality.
  * When we use wrapper objects to extend our core functionality and dont need to modify that core functionality we are using the decorator pattern.
@@ -13,8 +13,10 @@ package decorator.ex2;
  */
 public class TestDecorator {
 	public static void main(String[] args) {
-		
-		Coffee c1 = new WithSprinkles(new WithMilk(new SimpleCoffee()));
-		System.out.println("Cost: " + c1.getCost() + "; Ingredients: " + c1.getIngredients());
+		// Create a decorated Window with horizontal and vertical scrollbars
+		Window decoratedWindow = new HorizontalScrollBar(new VerticalScrollBar(new SimpleWindow()));
+
+		// Print the Window's description
+		System.out.println(decoratedWindow.getDescription());
 	}
 }
