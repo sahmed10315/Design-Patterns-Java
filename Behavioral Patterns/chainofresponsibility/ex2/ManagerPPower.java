@@ -1,5 +1,6 @@
 package chainofresponsibility.ex2;
 
+/* Chainable object */
 public class ManagerPPower extends PurchasePower {
 	private final double ALLOWABLE = 10 * BASE;
 

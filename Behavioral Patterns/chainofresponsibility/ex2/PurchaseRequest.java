@@ -1,5 +1,6 @@
 package chainofresponsibility.ex2;
 
+/* VO class used to encapsulate a sample purchase request */
 public class PurchaseRequest {
 	private double amount;
 	private String purpose;

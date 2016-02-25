@@ -1,5 +1,6 @@
 package chainofresponsibility.ex1;
 
+/* Each chainable object, carries the successor object in the chain as its field */
 public class FrontEnd implements HelpInterface {
 	final int FRONT_END_HELP = 1;
 	HelpInterface successor;
