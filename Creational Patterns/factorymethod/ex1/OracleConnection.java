@@ -1,13 +1,8 @@
 package factorymethod.ex1;
 
-public class OracleConnection extends Connection
-{
-  public OracleConnection()
-  {
-  }
-
-  public String description()
-  {
-    return "Oracle";
-  }
+/*Concrete class which can be instantiated by the factory method */
+public class OracleConnection extends Connection {
+	public String description() {
+		return "Oracle";
+	}
 }

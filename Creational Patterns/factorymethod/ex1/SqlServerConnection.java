@@ -1,13 +1,8 @@
 package factorymethod.ex1;
 
-public class SqlServerConnection extends Connection
-{
-  public SqlServerConnection()
-  {
-  }
-
-  public String description()
-  {
-    return "SQL Server";
-  }
+/*Concrete class which can be instantiated by the factory method */
+public class SqlServerConnection extends Connection {
+	public String description() {
+		return "SQL Server";
+	}
 }

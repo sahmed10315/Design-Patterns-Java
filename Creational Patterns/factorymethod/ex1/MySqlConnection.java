@@ -1,9 +1,7 @@
 package factorymethod.ex1;
 
+/*Concrete class which can be instantiated by the factory method */
 public class MySqlConnection extends Connection {
-	public MySqlConnection() {
-	}
-
 	public String description() {
 		return "MySQL";
 	}

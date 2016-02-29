@@ -1,21 +1,21 @@
 package factorymethod.ex2;
 
-public class Circle implements Shape{
+/*Concrete class which can be instantiated by the factory method */
+public class Circle implements Shape {
 
 	private int xPos, yPos;
 	private int radius;
-	
-	public Circle(int x, int y, int r){
+
+	public Circle(int x, int y, int r) {
 		setxPos(x);
 		setyPos(y);
 		setRadius(r);
 		System.out.println("Circle constructor");
 	}
-	
+
 	@Override
 	public void draw() {
 		System.out.println("Circle draw()");
-		
 	}
 
 	@Override
@@ -46,6 +46,5 @@ public class Circle implements Shape{
 	public void setRadius(int radius) {
 		this.radius = radius;
 	}
-	
 
 }
