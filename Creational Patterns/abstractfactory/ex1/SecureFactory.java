@@ -2,7 +2,8 @@ package abstractfactory.ex1;
 
 import factorymethod.ex1.Connection;
 
-public class SecureFactory extends ConnectionFactory {
+/* A concrete factory */
+public class SecureFactory implements ConnectionFactory {
 	public Connection createConnection(String type) {
 		if (type.equals("Oracle")) {
 			return new SecureOracleConnection();

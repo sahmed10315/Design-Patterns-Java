@@ -1,5 +1,6 @@
 package abstractfactory.ex2;
 
+/* A concrete factory */
 public class PrinterFriendlyFactory implements ShapeFactory {
 	@Override
 	public Shape getShape(String sourceType) {

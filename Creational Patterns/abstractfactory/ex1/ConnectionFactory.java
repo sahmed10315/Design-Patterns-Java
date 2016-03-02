@@ -2,9 +2,7 @@ package abstractfactory.ex1;
 
 import factorymethod.ex1.Connection;
 
-public abstract class ConnectionFactory {
-	public ConnectionFactory() {
-	}
-
-	protected abstract Connection createConnection(String type);
+/* Abstract specification for implementing an actual object factory */
+public interface ConnectionFactory {
+	public Connection createConnection(String type);
 }
